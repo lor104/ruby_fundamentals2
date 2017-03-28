@@ -12,10 +12,11 @@
 # ---===###new message###===---
 #
 # Hint: you'll have to call the same method multiple times.
+item = 1
 
 def wrap_text(text, character)
-  result = "#{character}#{text}#{character}"
-  return result
+  "#{character}#{text}#{character}"
+  # return result
 end
 
 puts "What text?"
@@ -24,3 +25,23 @@ puts "What characters to wrap it in?"
 character = gets.chomp
 
 puts wrap_text(text, character)
+
+  puts "add more characters"
+  type = wrap_text(text,character)
+  more = gets.chomp
+  final = wrap_text(type,more)
+  puts final
+
+  puts "add more characters"
+  type2 = final
+  more = gets.chomp
+  extra = wrap_text(type2,more)
+
+  puts extra
+
+#   if item == 2
+#     return final
+#   else
+#     item +=1
+#   end
+# end
