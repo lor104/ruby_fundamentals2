@@ -17,10 +17,11 @@
 
 
 def tempInC(temp)
-  cTemp = (temp.to_i - 32) * (5.0/9)
+  result = (temp.to_i - 32) * (5.0/9)
+  return result
 end
 
+
 puts "What temperature would you like to convert from F to C?"
-variable = gets.chomp
-tempInC(variable)
-puts "The converted temperature is #{cTemp}"
+temp = gets.chomp
+puts "The converted temperature of #{temp} degrees Fahrenheit is #{tempInC(temp)} degrees Celcius"
