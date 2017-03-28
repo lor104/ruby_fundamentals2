@@ -24,7 +24,16 @@ def print_grocery_list(array)
   array.each do |num|
     puts "* #{num}"
   end
+  puts "The number of items in your list is: #{array.count}"
 end
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+print_grocery_list(grocery_list)
+
+def add_item(item, gl)
+  gl << item
+end
+
+add_item("flour", grocery_list)
+
 print_grocery_list(grocery_list)
