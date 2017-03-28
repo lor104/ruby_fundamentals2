@@ -20,24 +20,37 @@ def wrap_text(text, character)
 end
 
 puts "What text?"
-text = gets.chomp
-puts "What characters to wrap it in?"
-character = gets.chomp
+type = gets.chomp
 
-puts wrap_text(text, character)
+(1..3).each do
+    puts "What characters?"
+    character = gets.chomp
+    result = wrap_text(type, character)
+    type = result
+    puts type
+end
 
-  puts "add more characters"
-  type = wrap_text(text,character)
-  more = gets.chomp
-  final = wrap_text(type,more)
-  puts final
 
-  puts "add more characters"
-  type2 = final
-  more = gets.chomp
-  extra = wrap_text(type2,more)
 
-  puts extra
+# puts "What text?"
+# text = gets.chomp
+# puts "What characters to wrap it in?"
+# character = gets.chomp
+#
+# puts wrap_text(text, character)
+#
+# puts "add more characters"
+# type = wrap_text(text,character)
+# more = gets.chomp
+# final = wrap_text(type,more)
+# puts final
+#
+# puts "add more characters"
+# type2 = final
+# more = gets.chomp
+# extra = wrap_text(type2,more)
+#
+# puts extra
 
 #   if item == 2
 #     return final
