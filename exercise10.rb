@@ -6,4 +6,8 @@ def print_hash(hash)
   end
 end
 
+
+#add cohort 4
+students[:cohort4] = 43
+
 print_hash(students)
