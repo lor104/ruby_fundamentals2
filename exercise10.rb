@@ -11,3 +11,5 @@ end
 students[:cohort4] = 43
 
 print_hash(students)
+
+students.each { |key, value| puts "#{key}"}
