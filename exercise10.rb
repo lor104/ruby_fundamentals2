@@ -21,3 +21,9 @@ end
 
 students.delete(:cohort2)
 puts students
+
+total = 0
+students.each do |key, value|
+  total = total + students[key]
+  puts total
+end
