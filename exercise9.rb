@@ -35,5 +35,10 @@ def add_item(item, gl)
 end
 
 add_item("flour", grocery_list)
-
 print_grocery_list(grocery_list)
+
+if grocery_list.include?("bananas") == true
+  puts "You do not need to pick up bananas"
+else
+  puts "You should probably pick up bananas"
+end
