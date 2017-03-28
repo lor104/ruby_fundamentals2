@@ -28,7 +28,6 @@ def print_grocery_list(array)
 end
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
-print_grocery_list(grocery_list)
 
 def add_item(item, gl)
   gl << item
@@ -44,3 +43,9 @@ else
 end
 
 puts "Second item in the list is: #{grocery_list[1]}"
+
+puts "Your alphabetically sorted list is:"
+puts "#{print_grocery_list(grocery_list.sort)}"
+
+grocery_list.delete("salmon")
+print_grocery_list(grocery_list)
