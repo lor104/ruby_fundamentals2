@@ -9,8 +9,20 @@
 #
 # Put this code into a method. The method should take an array as an argument and return the sum of the expenses in the array. Call the method twice with different arrays.
 
-expenses = [250, 7.95, 30.95, 16.50]
-sum = 0
-expenses.each do |num|
-  puts sum+=num
+
+
+# expenses.each do |num|
+#   puts sum+=num
+# end
+
+def calcExpenses(expenses)
+  sum = 0
+  expenses.each do |num|
+    sum+=num
+  end
+  puts sum
 end
+
+
+expenses = [250, 7.95, 30.95, 16.50]
+calcExpenses(expenses)
