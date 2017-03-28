@@ -14,7 +14,13 @@
 # Hint: you'll have to call the same method multiple times.
 
 def wrap_text(text, character)
-  puts "#{character}#{text}#{character}"
+  result = "#{character}#{text}#{character}"
+  return result
 end
 
-wrap_text("hello", "==")
+puts "What text?"
+text = gets.chomp
+puts "What characters to wrap it in?"
+character = gets.chomp
+
+puts wrap_text(text, character)
