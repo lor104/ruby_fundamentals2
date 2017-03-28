@@ -24,3 +24,8 @@ sibling_age = [27, 22]
 coin_flip = ["tails", "heads", "heads", "heads", "heads"]
 favourite_artist = ["Bruce Springsteen", "Leonard Cohen", "Cat Stevens"]
 favourite_colours = [:red, :blue, :rusty_orange, :forest_green, :black]
+
+definitions = {:snap => "make a sudden, sharp, distinct, sound", :crackle => "to make slight, sudden, sharp noises, rapidly repeated", :pop => "to make a short, quick, explosive sound"}
+favourite_movies = {:cinderella => 1950, :snow_white => 1937, :sleeping_beauty => 1959}
+cities = {:shanghai => 24256800, :karachi => 23500000, :beijing => 21516000}
+siblings = {:dara => 27, :jord => 22}
