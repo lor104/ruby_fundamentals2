@@ -42,3 +42,5 @@ if grocery_list.include?("bananas") == true
 else
   puts "You should probably pick up bananas"
 end
+
+puts "Second item in the list is: #{grocery_list[1]}"
