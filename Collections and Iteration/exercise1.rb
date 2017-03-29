@@ -1,11 +1,4 @@
 #INSTRUCTIONS
-# Print out the array of coin flips.
-# Print out the first element of the array of your favourite colours.
-# Output the sorted version of the array of your friends and family members' ages.
-#
-# Add a new baby (0 years old) to the array of your family's ages.
-#
-# Using the hash of movie information, access and print the year of one of the movies.
 
 # your favourite colours
 favourite_colours = ["red", "blue", "rusty orange", "forest green", "black"]
@@ -27,3 +20,20 @@ favourite_movies = {:cinderella => 1950, :snow_white => 1937, :sleeping_beauty =
 cities = {:shanghai => 24256800, :karachi => 23500000, :beijing => 21516000}
 # the names of your siblings/cousins/friends and their ages
 siblings = {:dara => 27, :jord => 22}
+
+
+# Print out the array of coin flips.
+puts coin_flip
+
+# Print out the first element of the array of your favourite colours.
+puts favourite_colours[0]
+
+# Output the sorted version of the array of your friends and family members' ages.
+puts sibling_age.sort
+
+# Add a new baby (0 years old) to the array of your family's ages.
+sibling_age << 0
+puts sibling_age
+
+# Using the hash of movie information, access and print the year of one of the movies.
+puts favourite_movies[:cinderella]
