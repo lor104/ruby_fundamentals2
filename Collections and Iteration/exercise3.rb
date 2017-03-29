@@ -38,6 +38,30 @@ puts sibling_age
 # Using the hash of movie information, access and print the year of one of the movies.
 puts favourite_movies[:cinderella]
 
+# Print out the last element of the array of your favourite colours.
+# Note: this should work for an array of any size!
+num = favourite_colours.length
+puts favourite_colours[num]
+
+# Add a new city to the hash of cities and population.
+cities[:lahore] = 18570105
+
+# Reverse the array of coin flips and save it.
+r_coin_flip = coin_flip.reverse
+puts r_coin_flip
+
+# Print out the population of one of the cities.
+puts cities[:lahore]
+
+# Print out a sentence about each item in the array of performing artists. For example:
+# I think Pearl Jam is great.
+# I think Lady Gaga is great.
+# I think Pink Floyd is great.
+
+favourite_artist.length.times do |num|
+  puts "I think #{favourite_artist[num]} is great"
+end
+
 # Print out the first two performing artists in that array.
 puts favourite_artist[0..1]
 
